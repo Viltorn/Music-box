@@ -96,4 +96,28 @@ body {
   border: 2px solid white;
   border-radius: 15px;
 }
- 
+.advantages {
+  display: flex;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  flex-wrap: no-wrap;
+  justify-content: center;
+}
+.advantage-item {
+  width: 300px;
+  margin-left: 25px;
+  margin-right: 25px;
+}
+.moon {
+  margin-left: 100px;
+}
+.about {
+  width: 500px;
+  margin: 0;
+}
+.section2 {
+  background:  #f7f7f7;
+}     
+.relax {
+  margin-right: 100px;
+}
