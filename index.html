@@ -33,7 +33,7 @@
         <h2 class="h2-title">Место, откуда не хочется улетать</h2>
       </div>
       <div>
-        <a class="button" href="">Забронировать</a>
+        <a class="button" href="#form">Забронировать</a>
       </div>
     </section>
     <section class="advantages">
@@ -65,6 +65,46 @@
         <p>Луна обладает всеми условиями для комфортного отдыха от большого города. В вашем распоряжении 22 моря и 18 гор. Самое ближайшее кольцо гор всего в 200 километров от вашей квартиры.</p>
         <p>Дома располагаются в новом районе «Лунные моря». При необходимости есть автобусы до района «Лунный материк».</p>
       </div>
+    </section>
+    <a name="form"></a>
+    <form>
+      <section class="center">
+        <h2 class="form-head">Оставьте заявку сегодня!</h2>
+        <fieldset class="input-1">
+          <legend>Параметры квартиры</legend>
+            <div class="flex-1">
+    	      <label for="rooms">Количество комнат:</label>
+              <input class="input-first" list="quantity" id="rooms" name="rooms"/>
+              <datalist id="quantity">
+                <option value="1">
+  	        <option value="2">
+  	        <option value="3">
+	      </datalist>
+              <label for="decoration">Отделка:</label>
+              <input class="input-first" list="type" id="decoration" name="decoration"/>
+              <datalist id="type">
+                <option value="Без отделки">
+  	        <option value="Стандарт">
+  	        <option value="Бизнес">
+	      </datalist>
+            </div>
+        </fieldset>
+        <fieldset class="input-1"> 
+          <legend>Контактная информация</legend>
+          <div class="flex-2">
+    	    <label for="name">Имя:</label>
+            <input class="input-second" type="text" name="name" value="">
+            <label for="phone">Телефон:</label>
+            <input class="input-second" type="text" name="phone" value="">
+            <label for="email">E-mail:</label>
+            <input class="input-second" type="text" name="email" value="">
+          </div>
+        </fieldset>
+        <div class="flex-center">
+          <a class="button-2" href="">Отправить</a>
+        </div>
+      </section>
+    </form>      
   </main>
   <footer>
   </footer>

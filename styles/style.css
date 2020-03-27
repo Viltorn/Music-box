@@ -121,3 +121,77 @@ body {
 .relax {
   margin-right: 100px;
 }
+form {
+  background: #f7f7f7;
+  display: flex;
+  justify-content: center;
+}  
+.center {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  padding-top: 80px;
+  padding-bottom: 80px; 
+}
+.form-head {
+  text-align: center;
+}
+label {
+  margin-right: 20px;
+  margin-top: 20px;
+}
+legend {
+  color: #00fa9a;
+  font-weight: 600;
+}
+.input-first {
+  width: 120px;
+  margin-left: 20px;
+  margin-top: 20px;
+  border-radius: 5px;
+  border: solid 1ps;
+  height: 20px; 
+}
+.flex-1 {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-bottom: 20px;
+  padding-right: 30px;
+}
+.input-1 {
+  margin-bottom: 20px;
+  border-color: #00fa9a;
+}
+.flex-2 {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-bottom: 20px;
+}
+.input-second {
+  width: 150px;
+  margin-left: 100px;
+  margin-top: 20px;
+  border-radius: 5px;
+  border: solid 1ps;
+  height: 20px;
+}
+.button-2 {
+  text-decoration: none;
+  color: #00fa9a;
+  width: 160px;
+  font-size: 18px;
+  font-weight: 600;
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border: 2px solid #00fa9a;
+  border-radius: 15px;
+  text-align: center;
+}
+.flex-center {
+  display: flex;
+  justify-content: center;
+}
+  
