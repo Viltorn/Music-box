@@ -16,7 +16,7 @@ body {
 .menu {
   display: flex;
   flex-direction: row;
-  color: black;
+  font-color: black;
 }  
 .fixed {
   position: fixed;
@@ -27,10 +27,10 @@ body {
 }
 .nav-item {
   padding-right: 20px;
-  color: #fff;
   cursor: pointer;
+  color: white;
 }
-.nav-item a {
+.item {
   text-decoration: none;
   color: black;
 }
@@ -40,7 +40,7 @@ body {
   padding: 10px;
 }
 .title {
-
+  padding-left: 20px;
 }
 .picture {
   padding-right: 20px;
@@ -194,4 +194,39 @@ legend {
   display: flex;
   justify-content: center;
 }
-  
+footer {
+  background: #303846;
+  padding-top: 60px;
+  padding-bottom: 80px;
+  display: flex;
+  justify-content: center;
+  font-color: white;
+}
+.allblocks {
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
+}
+.block-1 {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  flex-wrap: wrap;
+  width: 150px;
+  color: white;
+  height: 80px;
+}
+.block-2 {
+  color: white;
+  text-decoration: none;
+}
+.item-2 {
+  text-decoration: none;
+  color: white;
+}
+.title-2 {
+  font-weight: 600;
+  padding-left: 10px;
+}
