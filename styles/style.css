@@ -25,6 +25,11 @@ body {
   right: 0px;
   z-index: 100;  
 }
+.logo-1 {
+  width: 100px;
+  height: 100px; 
+  margin-left: 20px;
+}
 .nav-item {
   padding-right: 20px;
   cursor: pointer;
@@ -34,7 +39,7 @@ body {
   text-decoration: none;
   color: black;
 }
-.logo {
+.logo-name {
   display: flex;
   align-items: center;
   padding: 10px;
@@ -42,8 +47,9 @@ body {
 .title {
   padding-left: 20px;
 }
-.picture {
-  padding-right: 20px;
+.logo-2 {
+  width: 250px; 
+  height: 250px;
 }
 .height1 {
   height: 120px;
@@ -61,8 +67,7 @@ body {
 
 .h {
   color: #fff;
-  text-align: center;
- 
+  text-align: center; 
 }
 .h-title {
   width: 600px;
@@ -81,7 +86,6 @@ body {
   padding-top: 150px;
   left: calc(50% - (400px / 2));
 }
-
 .button {
   text-decoration: none;
   color: white;
@@ -115,7 +119,7 @@ body {
   width: 500px;
   margin: 0;
 }
-.section2 {
+.section-2 {
   background:  #f7f7f7;
 }     
 .relax {
@@ -159,7 +163,7 @@ legend {
   padding-bottom: 20px;
   padding-right: 30px;
 }
-.input-1 {
+.input-field {
   margin-bottom: 20px;
   border-color: #00fa9a;
 }
@@ -202,10 +206,14 @@ footer {
   justify-content: center;
   font-color: white;
 }
-.allblocks {
+.footer-blocks {
   display: flex;
   justify-content: space-between;
   width: 70%;
+}
+.title-2 {
+  font-weight: 600;
+  padding-left: 10px;
 }
 .block-1 {
   padding-top: 20px;
@@ -225,8 +233,4 @@ footer {
 .item-2 {
   text-decoration: none;
   color: white;
-}
-.title-2 {
-  font-weight: 600;
-  padding-left: 10px;
 }
