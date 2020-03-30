@@ -46,12 +46,13 @@ body {
 }
 .title {
   padding-left: 20px;
+  font-size: 20px; 
 }
 .logo-2 {
   width: 250px; 
   height: 250px;
 }
-.height1 {
+.height-1 {
   height: 120px;
 }
 .back {
@@ -64,7 +65,6 @@ body {
   top: 40%; 
   left: calc(50% - (250px / 2));
 }
-
 .h {
   color: #fff;
   text-align: center; 
@@ -114,6 +114,8 @@ body {
 }
 .moon {
   margin-left: 100px;
+  width: 400px; 
+  height: 300px;
 }
 .about {
   width: 500px;
@@ -124,6 +126,8 @@ body {
 }     
 .relax {
   margin-right: 100px;
+  width: 400px; 
+  height: 300px;
 }
 form {
   background: #f7f7f7;
@@ -214,6 +218,11 @@ footer {
 .title-2 {
   font-weight: 600;
   padding-left: 10px;
+  font-size: 15px;
+}
+.logo-3 {
+  width: 30px; 
+  height: 30px; 
 }
 .block-1 {
   padding-top: 20px;
