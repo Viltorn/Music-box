@@ -68,20 +68,20 @@ body {
 .back {
   background-image: url("../images/back.png");
   background-color: black; 
-  height: 600px;
+  height: 450px;
+  padding-top: 150px;
+  padding-bottom: 40px;
 }
 .flex-title {
   flex-wrap: wrap;
   width: 500px;
-  margin-top: 150px;
-  margin-bottom: 40px;
 }
 .img-logo-2 {
   width: 200px; 
 }
 .cover-title {
   color: #fff; 
-  margin-bottom: 60px;
+  margin-bottom: 40px;
 }
 .h1-title {
   font-size: 50px;
@@ -108,15 +108,16 @@ h2 {
 .max-w {
   max-width: 1000px;
 }
-.advantages {
+.features-size {
   flex-wrap: no-wrap;
   padding-top: 80px;
   padding-bottom: 80px;
 }
-.advantage-item {
+.w-300 {
   width: 300px;
-  margin-left: 25px;
-  margin-right: 25px;
+}
+.margin-right {
+  margin-right: 50px;
 }
 .img-moon {
   margin-left: 150px;

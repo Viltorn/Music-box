@@ -8,19 +8,17 @@
     <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
-  <div class="fixed">
-    <header class="header head-height">
-      <div class="logo-align">
-        <img class="img-logo-1" src="images/logo.svg" alt="logo">
-        <h1 class="title">Лунное море</h1>
-      </div>
-      <ul class="menu">
-          <li class="nav-item"><a class="item" href="#advantage">Преимущества</a></li>
-          <li class="nav-item"><a class="item" href="#about">О ЖК</a></li>
-          <li class="nav-item"><a class="item" href="#relax">Места для отдыха</a></li>
-      </ul>
-    </header>
-  </div>  
+  <header class="header fixed head-height">
+    <div class="logo-align">
+      <img class="img-logo-1" src="images/logo.svg" alt="logo">
+      <h1 class="title">Лунное море</h1>
+    </div>
+    <ul class="menu">
+      <li class="nav-item"><a class="item" href="#advantages">Преимущества</a></li>
+      <li class="nav-item"><a class="item" href="#about">О ЖК</a></li>
+      <li class="nav-item"><a class="item" href="#relax">Места для отдыха</a></li>
+    </ul>
+  </header> 
   <main>
     <section class="back flex-center">
       <div class="flex-title flex-center">
@@ -36,22 +34,24 @@
         </div>
       </div>
     </section>
-    <section id="advantage" class="advantages flex-center">
-      <div class="advantage-item">
-        <h2>Уникальный вид</h2>
-        <p>Вид на космос из вашего окна. Мы построили дома с большими окнами, чтобы вы могли наслаждаться метеоритными потоками.</p>
-      </div>
-      <div class="advantage-item">
-        <h2>Инфраструктура</h2>
-        <p>Прекрасные дороги рядом с домом. Много мест для прогулки. Всего в 200 км. от посёлка находится кольцо гор Кордильеры, на которых вы сможете провести незабываемые выходные.</p>
-      </div>
-      <div class="advantage-item">
-        <h2>Близость к Москве</h2>
-        <p>При небольшой цене мы располагаемся близко к МКАД. Всего 384 000 километров и вы в самом сердце России.</p>
+    <section id="advantages" class="flex-center">
+      <div class="features-size max-w flex-center">
+        <div class="margin-right w-300">
+          <h2>Уникальный вид</h2>
+          <p>Вид на космос из вашего окна. Мы построили дома с большими окнами, чтобы вы могли наслаждаться метеоритными потоками.</p>
+        </div>
+        <div class="margin-right w-300">
+          <h2>Инфраструктура</h2>
+          <p>Прекрасные дороги рядом с домом. Много мест для прогулки. Всего в 200 км. от посёлка находится кольцо гор Кордильеры, на которых вы сможете провести незабываемые выходные.</p>
+        </div>
+        <div class="w-300">
+          <h2>Близость к Москве</h2>
+          <p>При небольшой цене мы располагаемся близко к МКАД. Всего 384 000 километров и вы в самом сердце России.</p>
+        </div>
       </div>
     </section>
     <section id="about" class="bg-grey flex-center">
-        <div class="advantages max-w flex-center">
+        <div class="features-size max-w flex-center">
           <div class="about">
             <h2>О ЖК «Лунное море»</h2>
             <p>Все чаще жители Москвы предпочитают загородный дом городской квартире, к тому же связь с мегаполисом не теряется – современные скоростные трассы позволяют без труда добираться до столицы и обратно.</p>
@@ -61,7 +61,7 @@
         </div>
     </section>
     <section id="relax" class="flex-center">
-      <div class="advantages max-w flex-center">
+      <div class="features-size max-w flex-center">
         <img class="img-relax" src="images/relax.jpg" alt="relax">
         <div class="about">
           <h2>Места для отдыха</h2>
@@ -71,7 +71,7 @@
       </div>
     </section>
     <form id="form" class="flex-center bg-grey">
-      <section class="form-size">
+      <section class="form-size max-w">
         <h2 class="text-center">Оставьте заявку сегодня!</h2>
         <fieldset class="form-field">
           <legend>Параметры квартиры</legend>
