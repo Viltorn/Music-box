@@ -9,9 +9,9 @@
 </head>
 <body>
   <div class="fixed">
-    <header class="header height-1">
-      <div class="logo-name">
-        <img class="logo-1" src="images/logo2.svg" alt="logo">
+    <header class="header head-height">
+      <div class="logo-align">
+        <img class="img-logo-1" src="images/logo.svg" alt="logo">
         <h1 class="title">Лунное море</h1>
       </div>
       <ul class="menu">
@@ -22,21 +22,21 @@
     </header>
   </div>  
   <main>
-    <section class="back cover-flex">
-      <div class="flex-title">
-        <div class="cover-logo">
-          <img class="logo-2" src="images/logo2.svg" alt="logo">
+    <section class="back flex-center">
+      <div class="flex-title flex-center">
+        <div class="flex-center">
+          <img class="img-logo-2" src="images/logo.svg" alt="logo">
         </div>
-        <div class="h-title">
-          <h1 class="h1-title">ЖК «Лунное море»</h1>
-          <h2 class="h2-title">Место, откуда не хочется улетать</h2>
+        <div class="cover-title">
+          <h1 class="h1-title text-center">ЖК «Лунное море»</h1>
+          <h2 class="h2-title text-center">Место, откуда не хочется улетать</h2>
         </div>
         <div>
-          <a class="button" href="#form">Забронировать</a>
+          <a class="button text-center" href="#form">Забронировать</a>
         </div>
       </div>
     </section>
-    <section id="advantage" class="advantages">
+    <section id="advantage" class="advantages flex-center">
       <div class="advantage-item">
         <h2>Уникальный вид</h2>
         <p>Вид на космос из вашего окна. Мы построили дома с большими окнами, чтобы вы могли наслаждаться метеоритными потоками.</p>
@@ -50,37 +50,41 @@
         <p>При небольшой цене мы располагаемся близко к МКАД. Всего 384 000 километров и вы в самом сердце России.</p>
       </div>
     </section>
-    <section id="about" class="advantages section-2">
-      <div class="about">
-        <h2>О ЖК «Лунное море»</h2>
-        <p>Все чаще жители Москвы предпочитают загородный дом городской квартире, к тому же связь с мегаполисом не теряется – современные скоростные трассы позволяют без труда добираться до столицы и обратно.</p>
-        <p>Мы построили наши дома на самом близком к Солнцу спутнике, всего в 380 тысяч километров от Земли.</p>
-      </div>
-      <img class="moon" src="images/logo5.jpg" alt="moon">
+    <section id="about" class="bg-grey flex-center">
+        <div class="advantages max-w flex-center">
+          <div class="about">
+            <h2>О ЖК «Лунное море»</h2>
+            <p>Все чаще жители Москвы предпочитают загородный дом городской квартире, к тому же связь с мегаполисом не теряется – современные скоростные трассы позволяют без труда добираться до столицы и обратно.</p>
+            <p>Мы построили наши дома на самом близком к Солнцу спутнике, всего в 380 тысяч километров от Земли.</p>
+          </div>
+          <img class="img-moon" src="images/moon.jpg" alt="moon">
+        </div>
     </section>
-    <section id="relax" class="advantages">
-      <img class="relax" src="images/logo4.jpg" alt="relax">
-      <div class="about">
-        <h2>Места для отдыха</h2>
-        <p>Луна обладает всеми условиями для комфортного отдыха от большого города. В вашем распоряжении 22 моря и 18 гор. Самое ближайшее кольцо гор всего в 200 километров от вашей квартиры.</p>
-        <p>Дома располагаются в новом районе «Лунные моря». При необходимости есть автобусы до района «Лунный материк».</p>
+    <section id="relax" class="flex-center">
+      <div class="advantages max-w flex-center">
+        <img class="img-relax" src="images/relax.jpg" alt="relax">
+        <div class="about">
+          <h2>Места для отдыха</h2>
+          <p>Луна обладает всеми условиями для комфортного отдыха от большого города. В вашем распоряжении 22 моря и 18 гор. Самое ближайшее кольцо гор всего в 200 километров от вашей квартиры.</p>
+          <p>Дома располагаются в новом районе «Лунные моря». При необходимости есть автобусы до района «Лунный материк».</p>
+        </div>
       </div>
     </section>
-    <form id="form">
-      <section class="center">
-        <h2 class="form-head">Оставьте заявку сегодня!</h2>
-        <fieldset class="input-field">
+    <form id="form" class="flex-center bg-grey">
+      <section class="form-size">
+        <h2 class="text-center">Оставьте заявку сегодня!</h2>
+        <fieldset class="form-field">
           <legend>Параметры квартиры</legend>
-            <div class="flex-1">
+            <div class="input-padding-1 flex-between">
     	      <label for="rooms">Количество комнат:</label>
-              <input class="input-first" list="quantity" id="rooms" name="rooms"/>
+              <input class="form-input-1" list="quantity" id="rooms" name="rooms"/>
               <datalist id="quantity">
                 <option value="1">
   	        <option value="2">
   	        <option value="3">
 	      </datalist>
               <label for="decoration">Отделка:</label>
-              <input class="input-first" list="type" id="decoration" name="decoration"/>
+              <input class="form-input-1" list="type" id="decoration" name="decoration"/>
               <datalist id="type">
                 <option value="Без отделки">
   	        <option value="Стандарт">
@@ -88,42 +92,42 @@
 	      </datalist>
             </div>
         </fieldset>
-        <fieldset class="input-field"> 
+        <fieldset class="form-field"> 
           <legend>Контактная информация</legend>
-          <div class="flex-2">
+          <div class="input-padding-2 flex-between">
     	    <label >Имя:</label>
-            <input class="input-second" type="text" name="name" value="">
+            <input class="form-input-2" type="text" name="name" value="">
             <label >Телефон:</label>
-            <input class="input-second" type="text" name="phone" value="">
+            <input class="form-input-2" type="text" name="phone" value="">
             <label >E-mail:</label>
-            <input class="input-second" type="text" name="email" value="">
+            <input class="form-input-2" type="text" name="email" value="">
           </div>
         </fieldset>
         <div class="flex-start">
-          <a class="button-2" href="">Отправить</a>
+          <a class="button-2 text-center" href="">Отправить</a>
         </div>
       </section>
     </form>      
   </main>
-  <footer>
-    <div class="footer-blocks">
-      <div class="block-1">
-        <img class="logo-3" src="images/logo2.svg" alt="logo">
-    	<h1 class="title-2">Лунное море</h1> 
+  <footer class="flex-center">
+    <div class="footer-flex">
+      <div class="foot-name-block flex-start">
+        <img class="img-logo-3" src="images/logo.svg" alt="logo">
+    	<h1 class="foot-title">Лунное море</h1> 
         <p>© 2020 год.</p>
       </div>
-      <div class="block-2">
+      <div class="foot-menu">
         <h3>Проектная документация</h3>
-        <ul class="menu-2">
-          <li><a class="item-2" href="">Скачать</a></li>
-          <li><a class="item-2" href="">Посмотреть на сайте</a></li>
+        <ul>
+          <li><a class="foot-menu" href="">Скачать</a></li>
+          <li><a class="foot-menu" href="">Посмотреть на сайте</a></li>
         </ul>
       </div>
-      <div class="block-2">
+      <div class="foot-menu">
         <h3>О застройщике</h3>
-        <ul class="menu-2">
-          <li><a class="item-2" href="">Отзывы</a></li>
-          <li><a class="item-2" href="">Сайт компании</a></li>
+        <ul>
+          <li><a class="foot-menu" href="">Отзывы</a></li>
+          <li><a class="foot-menu" href="">Сайт компании</a></li>
         </ul>
       </div>
     </div>
