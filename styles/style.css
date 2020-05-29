@@ -6,6 +6,15 @@ body {
 .text-center {
   text-align: center;
 }
+.flex {
+  display: flex;
+}
+.flex-row {
+  flex-direction: row;
+}
+.flex-wrap {
+  flex-wrap: wrap;
+}
 .flex-start {
   display: flex;
   justify-content: start;
@@ -19,18 +28,22 @@ body {
   display: flex;
   justify-content: center;
 }
-.header {
+.flex-between {
+  display: flex;
+  justify-content: space-between;
+}
+.bg-white {
+  background: white;
+}
+.items-center {
+  align-items: center;
+}  
+.head-font {
   font-size: 21px;
   font-weight: 800;
   padding: 10px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background: white;
 }
-.menu {
-  display: flex;
-  flex-direction: row;
+.font-black { 
   font-color: black;
 }  
 .fixed {
@@ -40,43 +53,43 @@ body {
   right: 0px;
   z-index: 100;
 }
-.img-logo-1 {
+.width-70 {
   width: 70px;
+}
+.margin-l-20 {
   margin-left: 20px;
 }
-.nav-item {
+.navi-bullet {
   padding-right: 20px;
-  cursor: pointer;
   color: white;
 }
-.item {
+.navi-item {
   text-decoration: none;
   color: black;
 }
-.logo-align {
-  display: flex;
-  align-items: center;
+.padding-10 {
   padding: 10px;
 }
-.title {
+.title-font {
   padding-left: 20px;
   font-size: 20px; 
 }
-.head-height {
+.height-90 {
   height: 90px;
 }
-.back {
+main {
+ margin-top: 90px;
+}
+.cover-bg {
   background-image: url("../images/back.png");
-  background-color: black; 
-  height: 450px;
-  padding-top: 150px;
+  background-color: black;
+  padding-top: 100px; 
   padding-bottom: 40px;
 }
-.flex-title {
-  flex-wrap: wrap;
+.width-500 {
   width: 500px;
 }
-.img-logo-2 {
+.width-200 {
   width: 200px; 
 }
 .cover-title {
