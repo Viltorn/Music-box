@@ -8,9 +8,9 @@
     <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
-  <header class="head-font bg-white items-center flex-between fixed height-90">
+  <header class="head-font bg-white items-center flex-between flex-wrap fixed h-90">
     <div class="items-center flex padding-10">
-      <img class="width-70 margin-l-20" src="images/logo.svg" alt="logo">
+      <img class="w-70 margin-l-20" src="images/logo.svg" alt="logo">
       <h1 class="title-font">Лунное море</h1>
     </div>
     <ul class="flex flex-row font-black">
@@ -21,26 +21,26 @@
   </header> 
   <main>
     <section class="cover-bg flex-center">
-      <div class="width-500 flex-wrap flex-center">
+      <div class="w-500 flex-wrap flex-center">
         <div class="flex-center">
-          <img class="width-200" src="images/logo.svg" alt="logo">
+          <img class="w-200" src="images/logo.svg" alt="logo">
         </div>
-        <div class="cover-title">
-          <h1 class="h1-title text-center">ЖК «Лунное море»</h1>
-          <h2 class="h2-title text-center">Место, откуда не хочется улетать</h2>
+        <div class="margin-b-40 font-white">
+          <h1 class="font-50 text-center">ЖК «Лунное море»</h1>
+          <h2 class="font-20 text-center">Место, откуда не хочется улетать</h2>
         </div>
         <div>
-          <a class="button text-center" href="#form">Забронировать</a>
+          <a class="button-250 text-center" href="#form">Забронировать</a>
         </div>
       </div>
     </section>
     <section id="advantages" class="flex-center">
       <div class="features-size max-w flex-center">
-        <div class="margin-right w-300">
+        <div class="margin-r-50 w-300">
           <h2>Уникальный вид</h2>
           <p>Вид на космос из вашего окна. Мы построили дома с большими окнами, чтобы вы могли наслаждаться метеоритными потоками.</p>
         </div>
-        <div class="margin-right w-300">
+        <div class="margin-r-50 w-300">
           <h2>Инфраструктура</h2>
           <p>Прекрасные дороги рядом с домом. Много мест для прогулки. Всего в 200 км. от посёлка находится кольцо гор Кордильеры, на которых вы сможете провести незабываемые выходные.</p>
         </div>
@@ -52,7 +52,7 @@
     </section>
     <section id="about" class="bg-grey flex-center">
         <div class="features-size max-w flex-center">
-          <div class="about">
+          <div class="w-500">
             <h2>О ЖК «Лунное море»</h2>
             <p>Все чаще жители Москвы предпочитают загородный дом городской квартире, к тому же связь с мегаполисом не теряется – современные скоростные трассы позволяют без труда добираться до столицы и обратно.</p>
             <p>Мы построили наши дома на самом близком к Солнцу спутнике, всего в 380 тысяч километров от Земли.</p>
@@ -63,7 +63,7 @@
     <section id="relax" class="flex-center">
       <div class="features-size max-w flex-center">
         <img class="img-relax" src="images/relax.jpg" alt="relax">
-        <div class="about">
+        <div class="w-500">
           <h2>Места для отдыха</h2>
           <p>Луна обладает всеми условиями для комфортного отдыха от большого города. В вашем распоряжении 22 моря и 18 гор. Самое ближайшее кольцо гор всего в 200 километров от вашей квартиры.</p>
           <p>Дома располагаются в новом районе «Лунные моря». При необходимости есть автобусы до района «Лунный материк».</p>
@@ -75,7 +75,7 @@
         <h2 class="text-center">Оставьте заявку сегодня!</h2>
         <fieldset class="form-field">
           <legend>Параметры квартиры</legend>
-            <div class="input-padding-1 flex-between">
+            <div class="input-padding-1 flex-wrap flex-between">
     	      <label for="rooms">Количество комнат:</label>
               <input class="form-input-1" list="quantity" id="rooms" name="rooms"/>
               <datalist id="quantity">
@@ -94,7 +94,7 @@
         </fieldset>
         <fieldset class="form-field"> 
           <legend>Контактная информация</legend>
-          <div class="input-padding-2 flex-between">
+          <div class="input-padding-2 flex-wrap flex-between">
     	    <label >Имя:</label>
             <input class="form-input-2" type="text" name="name" value="">
             <label >Телефон:</label>
