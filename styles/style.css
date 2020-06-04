@@ -3,6 +3,9 @@ body {
   margin: 0;
   padding: 0; 
 }
+.border-box {
+  box-sizing: border-box;
+} 
 .text-center {
   text-align: center;
 }
@@ -121,14 +124,21 @@ main {
 .font-15 {
   font-size: 15px;
 }
-.button-250 {
+.btn {
   text-decoration: none;
-  color: white;
-  width: 250px;
+  font-weight: 600;
   font-size: 20px;
   padding: 15px 20px 15px 20px;
-  border: 2px solid white;
+  border: 2px solid;
   border-radius: 15px;
+}
+.btn-white {
+  border-color: #fff;
+  color: #fff;
+}
+.btn-green {
+  color: #00fa9a;
+  border-color: #00fa9a;
 }
 .max-w {
   max-width: 1000px;
@@ -219,16 +229,6 @@ legend {
 }
 .border-green {
   border-color: #00fa9a;
-}
-.button-green {
-  text-decoration: none;
-  color: #00fa9a;
-  font-size: 18px;
-  font-weight: 600;
-  padding-top: 12px;
-  padding-bottom: 12px;
-  border: 2px solid #00fa9a;
-  border-radius: 15px;
 }
 .bg-dark {
   background: #303846;
