@@ -8,10 +8,10 @@
     <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
-  <header class="border-box font-21 pad-10 bg-white items-center flex-between flex-wrap fixed h-90">
-    <div class="items-center flex padding-10">
-      <img class="w-70 margin-l-20" src="images/logo.svg" alt="logo">
-      <h1 class="pad-l-20 font-21">Лунное море</h1>
+  <header class="header bg-white align-center flex-between flex-wrap fixed">
+    <div class="items-center flex">
+      <img class="w-70" src="images/logo.svg" alt="logo">
+      <p class="margin-l-20">Лунное море</p>
     </div>
     <ul class="flex flex-row font-black">
       <li class="navi-bullet"><a class="font-black" href="#advantages">Преимущества</a></li>
@@ -21,26 +21,22 @@
   </header> 
   <main>
     <section class="cover-bg flex-center">
-      <div class="w-500 flex-wrap flex-center">
-        <div class="flex-center">
-          <img class="w-200" src="images/logo.svg" alt="logo">
-        </div>
+      <div class="max-w flex-column flex">
+        <img class="w-200 item-center" src="images/logo.svg" alt="logo">
         <div class="margin-b-40 font-white">
           <h1 class="font-50 text-center">ЖК «Лунное море»</h1>
-          <h2 class="font-20 pad-0 text-center">Место, откуда не хочется улетать</h2>
+          <h2 class="font-20 text-center">Место, откуда не хочется улетать</h2>
         </div>
-        <div>
-          <a class="btn btn-white text-center" href="#form">Забронировать</a>
-        </div>
+        <a class="btn btn-white w-150 item-center text-center" href="#form">Забронировать</a>
       </div>
     </section>
     <section id="advantages" class="flex-center">
-      <div class="flex-nowrap pad-t-80 pad-b-80 max-w flex-center">
-        <div class="margin-r-50 w-300">
+      <div class="container">
+        <div class="w-300">
           <h2>Уникальный вид</h2>
           <p>Вид на космос из вашего окна. Мы построили дома с большими окнами, чтобы вы могли наслаждаться метеоритными потоками.</p>
         </div>
-        <div class="margin-r-50 w-300">
+        <div class="w-300">
           <h2>Инфраструктура</h2>
           <p>Прекрасные дороги рядом с домом. Много мест для прогулки. Всего в 200 км. от посёлка находится кольцо гор Кордильеры, на которых вы сможете провести незабываемые выходные.</p>
         </div>
@@ -51,18 +47,18 @@
       </div>
     </section>
     <section id="about" class="bg-grey flex-center">
-        <div class="flex-nowrap pad-t-80 pad-b-80 max-w flex-center">
+        <div class="container">
           <div class="w-500">
             <h2>О ЖК «Лунное море»</h2>
             <p>Все чаще жители Москвы предпочитают загородный дом городской квартире, к тому же связь с мегаполисом не теряется – современные скоростные трассы позволяют без труда добираться до столицы и обратно.</p>
             <p>Мы построили наши дома на самом близком к Солнцу спутнике, всего в 380 тысяч километров от Земли.</p>
           </div>
-          <img class="img-w-350 margin-l-150" src="images/moon.jpg" alt="moon">
+          <img class="img-w-350" src="images/moon.jpg" alt="moon">
         </div>
     </section>
     <section id="relax" class="flex-center">
-      <div class="flex-nowrap pad-t-80 pad-b-80 max-w flex-center">
-        <img class="img-w-350 margin-r-150" src="images/relax.jpg" alt="relax">
+      <div class="container">
+        <img class="img-w-350" src="images/relax.jpg" alt="relax">
         <div class="w-500">
           <h2>Места для отдыха</h2>
           <p>Луна обладает всеми условиями для комфортного отдыха от большого города. В вашем распоряжении 22 моря и 18 гор. Самое ближайшее кольцо гор всего в 200 километров от вашей квартиры.</p>
@@ -71,20 +67,20 @@
       </div>
     </section>
     <form id="form" class="flex-center bg-grey">
-      <section class="flex flex-column w-400 pad-t-80 pad-b-80 max-w">
+      <section class="flex flex-column w-400 container">
         <h2 class="text-center">Оставьте заявку сегодня!</h2>
         <fieldset class="margin-b-20 border-green">
           <legend>Параметры квартиры</legend>
-            <div class="pad-b-20 pad-r-30 flex-wrap flex-between">
+            <div class="form-container pad-r-30">
     	      <label for="rooms">Количество комнат:</label>
-              <input class="margin-l-20 marging-t-20 w-120 border-r-5" list="quantity" id="rooms" name="rooms"/>
+              <input class="margin-l-20 w-120 input-border" list="quantity" id="rooms" name="rooms"/>
               <datalist id="quantity">
                 <option value="1">
   	        <option value="2">
   	        <option value="3">
 	      </datalist>
               <label for="decoration">Отделка:</label>
-              <input class="margin-l-20 marging-t-20 w-120 border-r-5" list="type" id="decoration" name="decoration"/>
+              <input class="margin-l-20 w-120 input-border" list="type" id="decoration" name="decoration"/>
               <datalist id="type">
                 <option value="Без отделки">
   	        <option value="Стандарт">
@@ -94,13 +90,13 @@
         </fieldset>
         <fieldset class="margin-b-20 border-green"> 
           <legend>Контактная информация</legend>
-          <div class="ipad-b-20 flex-wrap flex-between">
+          <div class="form-container">
     	    <label >Имя:</label>
-            <input class="w-150 marging-t-20 margin-l-100 border-r-5" type="text" name="name" value="">
+            <input class="w-150 input-border margin-l-100" type="text" name="name" value="">
             <label >Телефон:</label>
-            <input class="w-150 marging-t-20 margin-l-100 border-r-5" type="text" name="phone" value="">
+            <input class="w-150 input-border margin-l-100" type="text" name="phone" value="">
             <label >E-mail:</label>
-            <input class="w-150 marging-t-20 margin-l-100 border-r-5" type="text" name="email" value="">
+            <input class="w-150 input-border margin-l-100" type="text" name="email" value="">
           </div>
         </fieldset>
         <div class="flex-start">
@@ -109,7 +105,7 @@
       </section>
     </form>      
   </main>
-  <footer class="bg-dark pad-t-60 pad-t-80 flex-center">
+  <footer class="bg-dark pad-t-60 flex-center">
     <div class="flex-between w-07">
       <div class="pad-t-20 pad-b-20 flex-wrap w-150 font-white flex-start">
         <img class="img-w-30" src="images/logo.svg" alt="logo">
