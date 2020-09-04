@@ -9,6 +9,11 @@ $green-btn: #34C176;
 $orange: #F89202;
 $red: #FF4157;
 $dark-font: #555555;
+$violet: #5328A1;
+$dark-red: #95390C;
+$album-cover: "Brother", "Out of my hands", "Letter from Egypt", "Vogts Villa", "Wild Seed", "Poetenes Evangelium";
+$singer-cover: "A-ha", "Tears for Fears", "Duran Duran", "Jack Savoretti", "Keane", "Frank Sinatra", "Paul Young", "Chris Rea";
+$i: 1;
 
 body {
   font-family: Roboto;
@@ -16,113 +21,6 @@ body {
   color: $primary;
   margin: 0;
   padding: 0;
-}
-.text-center {
-  text-align: center;
-}
-.flex-between {
-  display: flex;
-  justify-content: space-between;
-}
-.flex-center {
-  display: flex;
-  justify-content: center;
-}
-.flex-start {
-  display: flex;
-  justify-content: start;
-}
-.absolute {
-  position: absolute;
-}
-.flex-column {
-  flex-direction: column;
-}
-.align-center {
-  display: flex;
-  align-items: center;
-}
-.align-start {
-  display: flex;
-  align-items: flex-start;
-}
-.font-primary {
-  color: $primary;
-  text-decoration: none;
-}
-.font-secondary {
-  color: $secondary;
-  text-decoration: none;
-}
-.font-60 {
-  font-size: 60px;
-  line-height: 60px;
-}
-.font-30 {
-  font-size: 30px;
-}
-.font-24 {
-  font-size: 24px;
-  color: $primary;
-  font-weight: normal;
-}
-.font-22 {
-  font-size: 22px;
-  color: $primary;
-  font-weight: normal;
-}
-.font-18 {
-  font-size: 18px;
-}
-.font-14-bold {
-  font-size: 14px;
-  color: $primary;
-  font-weight: bold;
-}
-.font-11 {
-  font-size: 11px;
-}
-.line-h-03 {
-  line-height: 0.3;
-}
-.line-h-19 {
-  line-height: 0px;
-}
-.margin-b-45 {
-  margin-bottom: 60px;
-}
-.margin-b-20 {
-  margin-bottom: 20px;
-}
-.margin-r-40 {
-  margin-right: 40px;
-}
-.margin-b-100 {
-  margin-bottom: 100px;
-}
-.margin-l-10 {
-  margin-left: 10px;
-}
-.margin-t-35 {
-  margin-top: 35px;
-}
-.margin-t-70 {
-  margin-top: 90px;
-}
-.small-device-reverse {
-  flex-direction: row;
-}
-.big-container {
-  @extend .flex-center;
-  width: 1200px;
-}
-.frame {
-  @extend .flex-center;
-  background-color: $main-bg;
-  padding-top: 100px;
-  box-sizing: border-box;
-  padding-right: 30px;
-  padding-left: 30px;
 }
 header {
   margin: 0;
@@ -170,7 +68,7 @@ header {
     padding-left: 14px;
   }
 }
-.banner {
+.main-banner {
   background-image: url("../images/banner.png");
   max-height: 850px;
   width: 100%;
@@ -182,55 +80,68 @@ header {
   color: $primary;
   @extend .flex-center;
 }
-.banner-align {
+.artist-banner {
+  background-image: url("../images/Morten Harket.png");
+  width: 100%;
+  box-sizing: border-box;
+  padding-top: 278px;
+  padding-bottom: 80px;
+  color: $primary;
+  @extend .flex-center;
+}
+.artist-banner-align {
+  flex-direction: column;
+  text-align: start;
+}
+.main-banner-align {
     flex-wrap: wrap;
     text-align: center;
-  
-  h1 {
+} 
+h1 {
     font-size: 60px;
+    line-height: 0;
+ }
+.form-input-margin {
+  margin: 0;
+}
+.btn-icon {
+  width: 20px;
+  height: 20px;
+  @extend .margin-r-15;
+}
+.green-button {
+  width: 100%;
+  height: 50px;
+  @extend .font-14-bold;
+  background: $green-btn;
+  border-width: 0;
+}
+.artist-btn {
+  width: 200px;
+  height: 50px;
+  border-width: 0;
+  @extend .font-14-normal;
+  @extend .font-primary;
+  @extend .flex-start;
+  @extend .align-center;
+  padding: 15px 15px 15px 15px;
+}
+@each $name in $album-cover {
+  .cover-#{$i} {
+    background-image: url("../images/#{$name}.png");
   }
-  .form-container {
-    width: 570px;
-    max-width: 570px;
-    @extend .flex-between;
-    flex-direction: column;
-    color: $primary;
+  $i: $i + 1;
+}
+$i: 1;
+@each $name in $singer-cover {
+  .singer-cover-#{$i} {
+    background-image: url("../images/#{$name}.png");
   }
-  .input-container {
-    @extend .flex-between;
-    @extend .align-center;
-    width: auto;
-  }
-  .form-input {
-    box-sizing: border-box;
-    @extend .align-start;
-    width: 270px;
-    height: 50px;
-    border: 2px solid rgb(255, 255, 255, 0.1);
-    background: rgba(255, 255, 255, 0.1);
-    padding-left: 20px;
-    @extend .font-14-bold;
-  }
-  .form-input-margin {
-    margin: 0;
-  }
-  .green-button {
-    width: 100%;
-    height: 50px;
-    @extend .font-14-bold;
-    background: $green-btn;
-    border-width: 0;
-  }
+  $i: $i + 1;
 }
 h2 {
-  text-align: center;
   line-height: 0,1;
   font-size: 38px;
-  margin-bottom: 50px;
-}
-.tariff-container {
-  @extend .flex-between;
-  font-weight: normal;
   margin-bottom: 50px;
 }
 @for $i from 1 through 3 {
@@ -272,19 +183,6 @@ h2 {
   height: 70px;
   width: 302px;
   margin-bottom: 36px;
-}
-.middle-container {
-  @extend .flex-between;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  @extend .align-center;
-}
-.small-container {
-  width: 566px;
-  @extend .flex-start;
-  flex-direction: column;
-  font-weight: normal;
-  margin: 0;
 }
 .album-cover {
   width: 566px;
@@ -350,10 +248,6 @@ h3 {
   color: $footer-font;
   text-decoration: none;
 }
-.navi-container {
-  @extend .flex-start;
-  flex-direction: column;
-}
 h4 {
   font-size: 18px;
   font-weight: bold;
@@ -372,20 +266,7 @@ h4 {
   padding-right: 30px;
   padding-left: 30px;
 }
-.foot-container {
-  @extend .big-container;
-  justify-content: space-between;
-  box-sizing: border-box;
-  padding: 80px 0 100px 0;
-}
 .line {
   border-bottom: 1px solid #EEEEEE;
   width: 100%;
-}
-.foot-menu-container {
-  width: 1200px;
-  @extend .flex-start;
-  box-sizing: border-box;
-  padding-top: 50px;
-  padding-bottom: 50px;
 }

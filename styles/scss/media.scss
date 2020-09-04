@@ -19,7 +19,7 @@
         min-width: 300px;
       } 
     }  
-    .banner-align {
+    .main-banner-align {
       h1 {
         font-size: calc(100vw/1280*60);
       }
@@ -30,7 +30,7 @@
         width: calc(100vw/1250*270)
       }
     }
-    .banner {
+    .main-banner {
         height: 100%;
     }
     .font-30 {
@@ -78,7 +78,7 @@
     }
 }
 @media (max-width: 899px) {
-    .banner-align {
+    .main-banner-align {
       h1 {
         font-size: 35px;
         line-height: 1;
@@ -138,7 +138,7 @@
           margin-bottom: 10px;
         }    
     }
-    .banner {
+    .main-banner {
         width: 100%;
         padding-bottom: 50px;
     }
@@ -203,7 +203,7 @@
       padding-right: 20px;
       padding-left: 20px;
     }
-    .banner-align {
+    .main-banner-align {
       h1 {
       font-size: 30px;
       }
