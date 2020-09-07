@@ -70,24 +70,15 @@ header {
 }
 .main-banner {
   background-image: url("../images/banner.png");
-  max-height: 850px;
-  width: 100%;
-  box-sizing: border-box;
+  background-position: top;
   padding-top: 272px;
   padding-bottom: 254px;
-  padding-right: 50px;
-  padding-left: 50px;
-  color: $primary;
-  @extend .flex-center;
 }
 .artist-banner {
   background-image: url("../images/Morten Harket.png");
-  width: 100%;
-  box-sizing: border-box;
+  background-position: right 30% bottom 50%;
   padding-top: 278px;
   padding-bottom: 80px;
-  color: $primary;
-  @extend .flex-center;
 }
 .artist-banner-align {
   flex-direction: column;
@@ -104,27 +95,12 @@ h1 {
 .form-input-margin {
   margin: 0;
 }
-.btn-icon {
-  width: 20px;
-  height: 20px;
-  @extend .margin-r-15;
-}
 .green-button {
   width: 100%;
   height: 50px;
   @extend .font-14-bold;
   background: $green-btn;
   border-width: 0;
-}
-.artist-btn {
-  width: 200px;
-  height: 50px;
-  border-width: 0;
-  @extend .font-14-normal;
-  @extend .font-primary;
-  @extend .flex-start;
-  @extend .align-center;
-  padding: 15px 15px 15px 15px;
 }
 @each $name in $album-cover {
   .cover-#{$i} {
@@ -136,6 +112,7 @@ $i: 1;
 @each $name in $singer-cover {
   .singer-cover-#{$i} {
     background-image: url("../images/#{$name}.png");
+    background-size: 100%;
   }
   $i: $i + 1;
 }

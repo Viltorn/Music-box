@@ -1,7 +1,6 @@
 
-@media (max-width: 1280px) {
+@media (max-width: 1200px) {
     .big-container {
-      min-width: auto;
       width: 100vw;
     }
     .header-size {
@@ -13,22 +12,19 @@
       }
       .a-blank {
         min-width: 20px;
-        width: 50px;
       }
       .header-menu {
         min-width: 300px;
       } 
     }  
-    .main-banner-align {
-      h1 {
-        font-size: calc(100vw/1280*60);
-      }
-      .form-container {
-        width: 50vw;
-      }
-      .form-input {
-        width: calc(100vw/1250*270)
-      }
+    h1 {
+      font-size: calc(100vw/1280*60);
+    }
+    .form-container {
+      width: 50vw;
+    }
+    .form-input {
+      width: calc(100vw/1250*270)
     }
     .main-banner {
         height: 100%;
@@ -79,22 +75,22 @@
 }
 @media (max-width: 899px) {
     .main-banner-align {
-      h1 {
-        font-size: 35px;
-        line-height: 1;
-      }
       justify-content: center;
-      .form-container {
-        width: 280px;
-        justify-content: space-between;
-      }
-      .input-container {
-        flex-direction: column;
-      }
-      .form-input {
-        width: 280px;
-        margin: 0;
-      }
+    }
+    h1 {
+      font-size: 35px;
+      line-height: 1;
+    }
+    .form-container {
+      width: 280px;
+      justify-content: space-between;
+    }
+    .input-container {
+      flex-direction: column;
+    }
+    .form-input {
+      width: 280px;
+      margin: 0;
     }
     .font-30 {
       font-size: 22px;
@@ -110,6 +106,12 @@
       }
     h2 {
         font-size: 24px;
+    }
+    .margin-b-50 {
+      margin-bottom: 20px;
+    }
+    .margin-r-50 {
+      margin-right: 20px;
     }
     .header-size {
         box-sizing: border-box;
@@ -174,6 +176,11 @@
     .small-device-reverse {
       flex-direction: column-reverse;
     }
+    .small-album-cover {
+      width: 200px;
+      height: 200px;
+      padding:  165px 165px 10px 15px;
+    }
     footer {
       width: 100vw;
     }
@@ -189,24 +196,44 @@
     .footer-navi {
       margin-bottom: 20px;
     }
-
+    .mobile-direction {
+      flex-direction: row;
+      padding-right: 0;
+    }
 }
 @media (max-width: 599px) {
     .frame {
       padding-right: 20px;
       padding-left: 20px;
     }
+    .mobile-padding {
+      padding-right: 0;
+      margin-right: 0;
+    }
     .header-size {
+      padding-left: 20px;
+    }
+    .banner {
+      padding-right: 20px;
       padding-left: 20px;
     }
     .footer {
       padding-right: 20px;
       padding-left: 20px;
     }
-    .main-banner-align {
-      h1 {
+    h1 {
       font-size: 30px;
-      }
+    }
+    .small-album-container {
+      width: 130px;
+    }
+    .small-album-cover {
+      width: 130px;
+      height: 130px;
+      padding:  110px 110px 5px 5px;
+    }
+    .margin-b-70 {
+      margin-bottom: 40px;
     }
     .font-30 {
       font-size: 18px;
@@ -217,7 +244,13 @@
     .font-22 {
       font-size: 12px;
     }
+    .font-20 {
+      font-size: 16px;
+    }
     .font-18 {
+      font-size: 12px;
+    }
+    .font-16 {
       font-size: 12px;
     }
     h2 {
@@ -230,25 +263,35 @@
         padding-bottom: 16px;
       }
     }
+    .buttons-container {
+      width: auto;
+    }
+    .artist-btn {
+      width: 100%;
+      margin-bottom: 25px;
+    }
+    .cover-icon {
+      width: 15px;
+      height: 15px;
+    }
+
+    .track-container {
+      width: 100%;
+    }
     .btn-white {
       width: 239px;
     }
     .tarrif-condition {
       width: 239px;
     }
-    .album-cover {
-      width: 280px;
-      height: 140px;
-   }
-   .mobile-description {
+    .btn-grey {
+     width: 100%;
+    }
+    .mobile-description {
       width: 100%;
-   }
-   .phone-image {
+    }
+    .phone-image {
      width: 279px;
      height: 233px;
    }
-
-}
-
-
-
+  }

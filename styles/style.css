@@ -51,23 +51,16 @@ header {
 
 .main-banner {
   background-image: url("../images/banner.png");
-  max-height: 850px;
-  width: 100%;
-  box-sizing: border-box;
+  background-position: top;
   padding-top: 272px;
   padding-bottom: 254px;
-  padding-right: 50px;
-  padding-left: 50px;
-  color: #fff;
 }
 
 .artist-banner {
   background-image: url("../images/Morten Harket.png");
-  width: 100%;
-  box-sizing: border-box;
+  background-position: right 30% bottom 50%;
   padding-top: 278px;
   padding-bottom: 80px;
-  color: #fff;
 }
 
 .artist-banner-align {
@@ -89,23 +82,11 @@ h1 {
   margin: 0;
 }
 
-.btn-icon {
-  width: 20px;
-  height: 20px;
-}
-
 .green-button {
   width: 100%;
   height: 50px;
   background: #34C176;
   border-width: 0;
-}
-
-.artist-btn {
-  width: 200px;
-  height: 50px;
-  border-width: 0;
-  padding: 15px 15px 15px 15px;
 }
 
 .cover-1 {
@@ -134,34 +115,42 @@ h1 {
 
 .singer-cover-1 {
   background-image: url("../images/A-ha.png");
+  background-size: 100%;
 }
 
 .singer-cover-2 {
   background-image: url("../images/Tears for Fears.png");
+  background-size: 100%;
 }
 
 .singer-cover-3 {
   background-image: url("../images/Duran Duran.png");
+  background-size: 100%;
 }
 
 .singer-cover-4 {
   background-image: url("../images/Jack Savoretti.png");
+  background-size: 100%;
 }
 
 .singer-cover-5 {
   background-image: url("../images/Keane.png");
+  background-size: 100%;
 }
 
 .singer-cover-6 {
   background-image: url("../images/Frank Sinatra.png");
+  background-size: 100%;
 }
 
 .singer-cover-7 {
   background-image: url("../images/Paul Young.png");
+  background-size: 100%;
 }
 
 .singer-cover-8 {
   background-image: url("../images/Chris Rea.png");
+  background-size: 100%;
 }
 
 h2 {
@@ -328,7 +317,7 @@ h4 {
   justify-content: space-between;
 }
 
-.flex-center, .frame, .big-container, .foot-container, header, .main-banner, .artist-banner, .footer {
+.flex-center, .banner, .frame, .big-container, .foot-container, header, .footer {
   display: flex;
   justify-content: center;
 }
@@ -346,7 +335,7 @@ h4 {
   flex-direction: column;
 }
 
-.align-center, .small-track-container, .track-container, .middle-container, .input-container, .header-size, .header-size .header-menu, .artist-btn, .tariff-1, .tariff-2, .tariff-3, .tarrif-align, .author-label {
+.align-center, .small-track-container, .track-container, .middle-container, .input-container, .artist-btn, .header-size, .header-size .header-menu, .tariff-1, .tariff-2, .tariff-3, .tarrif-align, .author-label {
   display: flex;
   align-items: center;
 }
@@ -364,6 +353,11 @@ h4 {
 .font-secondary, .track-time, .track-author {
   color: #808080;
   text-decoration: none;
+}
+
+.flex-wrap {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .bg-violet {
@@ -444,6 +438,10 @@ h4 {
 
 .margin-b-60 {
   margin-bottom: 60px;
+}
+
+.margin-b-70 {
+  margin-bottom: 50px;
 }
 
 .margin-b-38 {
@@ -536,10 +534,37 @@ h4 {
   color: #fff;
 }
 
+.banner {
+  width: 100%;
+  background-size: auto 100%;
+  box-sizing: border-box;
+  padding-right: 30px;
+  padding-left: 30px;
+  color: #fff;
+}
+
 .buttons-container {
   width: 435px;
   flex-direction: row;
+  flex-wrap: wrap;
   color: #fff;
+}
+
+.artist-btn {
+  width: 200px;
+  height: 50px;
+  border-width: 0;
+  padding: 15px 15px 15px 15px;
+}
+
+.cover-icon {
+  width: 25px;
+  height: 25px;
+}
+
+.btn-icon {
+  width: 20px;
+  height: 20px;
 }
 
 .input-container {
@@ -615,9 +640,8 @@ h4 {
   padding-bottom: 50px;
 }
 
-@media (max-width: 1280px) {
+@media (max-width: 1200px) {
   .big-container, .foot-container {
-    min-width: auto;
     width: 100vw;
   }
 
@@ -631,19 +655,20 @@ h4 {
   }
   .header-size .a-blank {
     min-width: 20px;
-    width: 50px;
   }
   .header-size .header-menu {
     min-width: 300px;
   }
 
-  .main-banner-align h1 {
+  h1 {
     font-size: calc(100vw/1280*60);
   }
-  .main-banner-align .form-container {
+
+  .form-container {
     width: 50vw;
   }
-  .main-banner-align .form-input {
+
+  .form-input {
     width: calc(100vw/1250*270);
   }
 
@@ -719,18 +744,22 @@ h4 {
   .main-banner-align {
     justify-content: center;
   }
-  .main-banner-align h1 {
+
+  h1 {
     font-size: 35px;
     line-height: 1;
   }
-  .main-banner-align .form-container {
+
+  .form-container {
     width: 280px;
     justify-content: space-between;
   }
-  .main-banner-align .input-container {
+
+  .input-container {
     flex-direction: column;
   }
-  .main-banner-align .form-input {
+
+  .form-input {
     width: 280px;
     margin: 0;
   }
@@ -753,6 +782,14 @@ h4 {
 
   h2 {
     font-size: 24px;
+  }
+
+  .margin-b-50, .small-album-container {
+    margin-bottom: 20px;
+  }
+
+  .margin-r-50, .small-album-container {
+    margin-right: 20px;
   }
 
   .header-size {
@@ -836,6 +873,12 @@ h4 {
     flex-direction: column-reverse;
   }
 
+  .small-album-cover {
+    width: 200px;
+    height: 200px;
+    padding: 165px 165px 10px 15px;
+  }
+
   footer {
     width: 100vw;
   }
@@ -854,6 +897,11 @@ h4 {
   .footer-navi {
     margin-bottom: 20px;
   }
+
+  .mobile-direction {
+    flex-direction: row;
+    padding-right: 0;
+  }
 }
 @media (max-width: 599px) {
   .frame {
@@ -861,7 +909,17 @@ h4 {
     padding-left: 20px;
   }
 
+  .mobile-padding {
+    padding-right: 0;
+    margin-right: 0;
+  }
+
   .header-size {
+    padding-left: 20px;
+  }
+
+  .banner {
+    padding-right: 20px;
     padding-left: 20px;
   }
 
@@ -870,8 +928,22 @@ h4 {
     padding-left: 20px;
   }
 
-  .main-banner-align h1 {
+  h1 {
     font-size: 30px;
+  }
+
+  .small-album-container {
+    width: 130px;
+  }
+
+  .small-album-cover {
+    width: 130px;
+    height: 130px;
+    padding: 110px 110px 5px 5px;
+  }
+
+  .margin-b-70 {
+    margin-bottom: 40px;
   }
 
   .font-30, .rubles {
@@ -886,7 +958,15 @@ h4 {
     font-size: 12px;
   }
 
+  .font-20, .small-album-name {
+    font-size: 16px;
+  }
+
   .font-18 {
+    font-size: 12px;
+  }
+
+  .font-16, .small-album-date {
     font-size: 12px;
   }
 
@@ -912,6 +992,24 @@ h4 {
     padding-bottom: 16px;
   }
 
+  .buttons-container {
+    width: auto;
+  }
+
+  .artist-btn {
+    width: 100%;
+    margin-bottom: 25px;
+  }
+
+  .cover-icon {
+    width: 15px;
+    height: 15px;
+  }
+
+  .track-container {
+    width: 100%;
+  }
+
   .btn-white {
     width: 239px;
   }
@@ -920,9 +1018,8 @@ h4 {
     width: 239px;
   }
 
-  .album-cover {
-    width: 280px;
-    height: 140px;
+  .btn-grey {
+    width: 100%;
   }
 
   .mobile-description {

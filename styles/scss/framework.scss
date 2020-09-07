@@ -35,6 +35,10 @@
   color: $secondary;
   text-decoration: none;
 }
+.flex-wrap {
+  display: flex;
+  flex-wrap: wrap;
+}
 .bg-violet {
   background-color: $violet;
 }
@@ -98,6 +102,9 @@
 }
 .margin-b-60 {
   margin-bottom: 60px;
+}
+.margin-b-70 {
+  margin-bottom: 50px;
 }
 .margin-b-38 {
   margin-bottom: 38px;
@@ -171,12 +178,41 @@
   flex-direction: column;
   color: $primary;
  }
+ .banner {
+  width: 100%;
+  background-size: auto 100%;
+  box-sizing: border-box;
+  padding-right: 30px;
+  padding-left: 30px;
+  color: $primary;
+  @extend .flex-center;
+}
 .buttons-container {
   width: 435px;
   flex-direction: row;
+  flex-wrap: wrap;
   @extend .flex-between;
   color: $primary;
  }
+ .artist-btn {
+  width: 200px;
+  height: 50px;
+  border-width: 0;
+  @extend .font-14-normal;
+  @extend .font-primary;
+  @extend .flex-start;
+  @extend .align-center;
+  padding: 15px 15px 15px 15px;
+}
+.cover-icon {
+  width: 25px;
+  height: 25px;
+}
+.btn-icon {
+  width: 20px;
+  height: 20px;
+  @extend .margin-r-15;
+}
 .input-container {
   @extend .flex-between;
   @extend .align-center;
