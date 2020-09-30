@@ -1,31 +1,18 @@
 .text-center {
   text-align: center;
 }
+.uppercase {
+  text-transform: uppercase;
+}
 .flex-between {
   display: flex;
   justify-content: space-between;
-}
-.flex-center {
-  display: flex;
-  justify-content: center;
-}
-.flex-start {
-  display: flex;
-  justify-content: start;
 }
 .absolute {
   position: absolute;
 }
 .flex-column {
   flex-direction: column;
-}
-.align-center {
-  display: flex;
-  align-items: center;
-}
-.align-start {
-  display: flex;
-  align-items: flex-start;
 }
 .font-primary {
   color: $primary;
@@ -35,9 +22,24 @@
   color: $secondary;
   text-decoration: none;
 }
-.flex-wrap {
-  display: flex;
-  flex-wrap: wrap;
+.font-60 {
+  font-size: 60px;
+  line-height: 60px;
+}
+.margin-b-70 {
+  margin-bottom: 50px;
+}
+.margin-b-20 {
+  margin-bottom: 20px;
+}
+.margin-r-40 {
+  margin-right: 40px;
+}
+.margin-b-100 {
+  margin-bottom: 100px;
+}
+.padding-top-100 {
+  padding-top: 100px;
 }
 .bg-violet {
   background-color: $violet;
@@ -45,127 +47,127 @@
 .bg-dark-red {
   background-color: $dark-red;
 }
-.font-60 {
-  font-size: 60px;
-  line-height: 60px;
-}
-.font-30 {
-  font-size: 30px;
-}
-.font-24 {
-  font-size: 24px;
-  color: $primary;
-  font-weight: normal;
-}
-.font-22 {
-  font-size: 22px;
-  color: $primary;
-  font-weight: normal;
-}
-.font-20 {
-  font-size: 22px;
-  font-weight: bold;
-  margin: 0;
-}
-.font-18 {
-  font-size: 18px;
-  line-height: 0;
-  margin: 0;
-}
-.font-16 {
-  font-size: 16px;
-  font-weight: normal;
-  margin: 0;
-}
-.font-14-bold {
-  font-size: 14px;
-  color: $primary;
-  font-weight: bold;
-}
-.font-14-normal {
-  font-size: 14px;
-  font-weight: normal;
-  margin: 0;
-}
-.font-12-normal {
-  font-size: 12px;
-  margin: 0;
-}
-.font-11 {
-  font-size: 11px;
-}
-.line-h-03 {
-  line-height: 0.3;
-}
-.line-h-12 {
-  line-height: 1.2;
-}
-.margin-b-60 {
-  margin-bottom: 60px;
-}
-.margin-b-70 {
-  margin-bottom: 50px;
-}
-.margin-b-38 {
-  margin-bottom: 38px;
-}
-.margin-b-20 {
-  margin-bottom: 20px;
-}
-.margin-b-25 {
-  margin-bottom: 25px;
-}
-.margin-b-50 {
-  margin-bottom: 50px;
-}
-.margin-b-15 {
-  margin-bottom: 15px;
+.padding-top-75 {
+  padding-top: 75px;
 }
 .margin-b-10 {
   margin-bottom: 10px;
 }
-.margin-b-5 {
+.margin-b-15 {
+  margin-bottom: 15px;
+}
+%flex-center {
+  display: flex;
+  justify-content: center;
+}
+%flex-start {
+  display: flex;
+  justify-content: start;
+}
+%align-center {
+  display: flex;
+  align-items: center;
+}
+%align-start {
+  display: flex;
+  align-items: flex-start;
+}
+%flex-wrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+%font-30 {
+  font-size: 30px;
+  text-transform: uppercase;
+}
+%font-24 {
+  font-size: 24px;
+  color: $primary;
+  font-weight: normal;
+}
+%font-22 {
+  font-size: 22px;
+  color: $primary;
+  font-weight: normal;
+}
+%font-20 {
+  font-size: 22px;
+  font-weight: bold;
+}
+%font-18 {
+  font-size: 18px;
+  line-height: 0;
+  margin: 0;
+}
+%font-16 {
+  font-size: 16px;
+  font-weight: normal;
+}
+%font-14-bold {
+  font-size: 14px;
+  color: $primary;
+  font-weight: bold;
+}
+%font-14-normal {
+  font-size: 14px;
+  font-weight: normal;
+  margin: 0;
+}
+%font-12-normal {
+  font-size: 12px;
+  margin: 0;
+}
+%font-11 {
+  font-size: 11px;
+}
+%line-h-03 {
+  line-height: 0.3;
+}
+%line-h-12 {
+  line-height: 1.2;
+}
+%margin-b-60 {
+  margin-bottom: 60px;
+}
+%margin-b-38 {
+  margin-bottom: 38px;
+}
+%margin-b-25 {
+  margin-bottom: 25px;
+}
+%margin-b-50 {
+  margin-bottom: 50px;
+}
+%margin-b-5 {
   margin-bottom: 5px;
 }
-.margin-r-40 {
-  margin-right: 40px;
-}
-.margin-r-50 {
+%margin-r-50 {
   margin-right: 50px;
 }
-.margin-r-15 {
+%margin-r-15 {
   margin-right: 15px;
 }
-.margin-b-100 {
-  margin-bottom: 100px;
-}
-.margin-l-10 {
+%margin-l-10 {
   margin-left: 10px;
 }
-.margin-t-35 {
+%margin-t-35 {
   margin-top: 35px;
 }
-.margin-t-90 {
+%margin-t-90 {
   margin-top: 90px;
 }
-.padding-top-50 {
+%padding-top-50 {
   padding-top: 50px;
 }
-.padding-top-75 {
-  padding-top: 75px;
-}
-.padding-top-100 {
-  padding-top: 100px;
-}
-.small-device-reverse {
+%small-device-reverse {
   flex-direction: row;
 }
 .big-container {
-  @extend .flex-center;
+  @extend %flex-center;
   width: 1200px;
 }
 .frame {
-  @extend .flex-center;
+  @extend %flex-center;
   background-color: $main-bg;
   box-sizing: border-box;
   padding-right: 30px;
@@ -174,7 +176,6 @@
 .form-container {
   width: 570px;
   max-width: 570px;
-  @extend .flex-between;
   flex-direction: column;
   color: $primary;
  }
@@ -185,24 +186,23 @@
   padding-right: 30px;
   padding-left: 30px;
   color: $primary;
-  @extend .flex-center;
+  @extend %flex-center;
 }
 .buttons-container {
   width: 435px;
   flex-direction: row;
   flex-wrap: wrap;
-  @extend .flex-between;
   color: $primary;
  }
  .artist-btn {
   width: 200px;
   height: 50px;
   border-width: 0;
-  @extend .font-14-normal;
-  @extend .font-primary;
-  @extend .flex-start;
-  @extend .align-center;
+  @extend %font-14-normal;
+  @extend %flex-start;
+  @extend %align-center;
   padding: 15px 15px 15px 15px;
+  text-transform: uppercase;
 }
 .cover-icon {
   width: 25px;
@@ -211,51 +211,48 @@
 .btn-icon {
   width: 20px;
   height: 20px;
-  @extend .margin-r-15;
+  @extend %margin-r-15;
 }
 .input-container {
-  @extend .flex-between;
-  @extend .align-center;
+  @extend %align-center;
+  @extend %margin-t-35;
   width: auto;
 }
 .form-input {
   box-sizing: border-box;
-  @extend .align-start;
+  @extend %align-start;
   width: 270px;
   height: 50px;
   border: 2px solid rgb(255, 255, 255, 0.1);
   background: rgba(255, 255, 255, 0.1);
   padding-left: 20px;
-  @extend .font-14-bold;
+  @extend %font-14-bold;
 } 
 .tariff-container {
-  @extend .flex-between;
   font-weight: normal;
   margin-bottom: 50px;
 }
 .middle-container {
   flex-direction: row;
   flex-wrap: wrap;
-  @extend .align-center;
+  @extend %align-center;
 }
 .small-container {
   width: 566px;
-  @extend .flex-start;
+  @extend %flex-start;
   flex-direction: column;
   font-weight: normal;
   margin: 0;
 }
 .track-container {
   width: 532px;
-  @extend .flex-between;
-  @extend .align-center;
-  @extend .margin-b-25;
+  @extend %align-center;
+  @extend %margin-b-25;
   flex-wrap: nowrap;
 }
 .small-track-container {
-  @extend .flex-between;
   flex-wrap: wrap;
-  @extend .align-center;
+  @extend %align-center;
 }
 .track-icon {
   width: 55.3px;
@@ -263,40 +260,40 @@
   margin-right: 17px;
 }
 .track-name {
-  @extend .font-14-normal;
-  @extend .margin-b-5;
-  @extend .font-primary;
+  @extend %font-14-normal;
+  @extend %margin-b-5;
 }
 .track-author {
-  @extend .font-12-normal;
-  @extend .font-secondary;
+  @extend %font-12-normal;
 }
 .track-time {
-  @extend .font-14-normal;
-  @extend .font-secondary;
+  @extend %font-14-normal;
 }
 .small-album-cover {
   box-sizing: border-box;
   width: 250px;
   height: 250px;
   padding: 215px 210px 10px 15px;
+  margin-left: 0;
+  margin-right: 0;
 }
 .small-album-container {
   flex-direction: column;
-  @extend .margin-b-50;
-  @extend .margin-r-50;
+  @extend %margin-b-50;
+  @extend %margin-r-50;
 }
 .small-album-name {
-  @extend .font-20;
-  @extend .font-primary;
-  @extend .margin-b-10;
+  @extend %font-20;
+  margin-left: 0;
+  margin-right: 0;
 }
 .small-album-date {
-  @extend .font-16;
-  @extend .font-primary;
+  @extend %font-16;
+  margin-left: 0;
+  margin-right: 0;
 }
 .navi-container {
-  @extend .flex-start;
+  @extend %flex-start;
   flex-direction: column;
 }
 .foot-container {
@@ -307,7 +304,7 @@
 }
 .foot-menu-container {
   width: 1200px;
-  @extend .flex-start;
+  @extend %flex-start;
   box-sizing: border-box;
   padding-top: 50px;
   padding-bottom: 50px;

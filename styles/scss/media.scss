@@ -44,13 +44,13 @@
     .tarrif-condition {
         width: 100%;
     }
-    .font-24 {
+    %font-24 {
         font-size: calc(100vw/1250*24);
     }
-    .font-22 {
+    %font-22 {
         font-size: calc(100vw/1250*22);
     }
-    .font-18 {
+    %font-18 {
         font-size: calc(100vw/1250*18);
     }
     h2 {
@@ -92,16 +92,16 @@
       width: 280px;
       margin: 0;
     }
-    .font-30 {
+    %font-30 {
       font-size: 22px;
     }
-    .font-24 {
+    %font-24 {
       font-size: 18px;
     }
-    .font-22 {
+    %font-22 {
         font-size: 16px;
     }
-    .font-18 {
+    %font-18 {
         font-size: 14px;
       }
     h2 {
@@ -126,6 +126,7 @@
           width: 0;
           height: 0;
           order: 4;
+          margin: 0;
         }
         .header-menu {
           justify-content: start;
@@ -135,6 +136,10 @@
           min-width: 0;
           order: 3;
           padding: 0;
+          margin: 0;
+        }
+        .search {
+          margin-bottom: 12px;
         }
         .header-navi {
           margin-bottom: 10px;
@@ -226,6 +231,13 @@
     }
     .small-album-container {
       width: 130px;
+      margin-right: 20px;
+    }
+    .small-album-name {
+      margin-bottom: 5px;
+    }
+    .margin-b-15 {
+      margin-bottom: 10px;
     }
     .small-album-cover {
       width: 130px;
@@ -235,22 +247,22 @@
     .margin-b-70 {
       margin-bottom: 40px;
     }
-    .font-30 {
+    %font-30 {
       font-size: 18px;
     }
-    .font-24 {
+    %font-24 {
       font-size: 16px;
     }
-    .font-22 {
+    %font-22 {
       font-size: 12px;
     }
-    .font-20 {
+    %font-20 {
       font-size: 16px;
     }
-    .font-18 {
+    %font-18 {
       font-size: 12px;
     }
-    .font-16 {
+    %font-16 {
       font-size: 12px;
     }
     h2 {
@@ -274,7 +286,6 @@
       width: 15px;
       height: 15px;
     }
-
     .track-container {
       width: 100%;
     }

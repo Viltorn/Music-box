@@ -33,6 +33,7 @@ header {
 }
 .header-size .header-navi {
   margin-bottom: 0;
+  text-transform: uppercase;
 }
 .header-size .a-blank {
   flex: 0 1 335px;
@@ -47,6 +48,7 @@ header {
   border-radius: 50px;
   border-width: 0;
   padding-left: 14px;
+  margin: 0;
 }
 
 .main-banner {
@@ -76,6 +78,7 @@ header {
 h1 {
   font-size: 60px;
   line-height: 0;
+  text-transform: uppercase;
 }
 
 .form-input-margin {
@@ -87,6 +90,7 @@ h1 {
   height: 50px;
   background: #34C176;
   border-width: 0;
+  text-transform: uppercase;
 }
 
 .cover-1 {
@@ -157,6 +161,7 @@ h2 {
   line-height: 0, 1;
   font-size: 38px;
   margin-bottom: 50px;
+  text-transform: uppercase;
 }
 
 .tariff-1 {
@@ -186,10 +191,18 @@ h2 {
   flex-direction: column;
 }
 
+.tariffname {
+  text-transform: uppercase;
+}
+
 .price {
   display: flex;
   align-items: flex-start;
   margin-bottom: 40px;
+}
+
+.rubles {
+  text-transform: uppercase;
 }
 
 .tarrif-align {
@@ -209,6 +222,7 @@ h2 {
   height: 70px;
   width: 302px;
   margin-bottom: 36px;
+  text-transform: uppercase;
 }
 
 .album-cover {
@@ -312,19 +326,13 @@ h4 {
   text-align: center;
 }
 
-.flex-between, .small-track-container, .track-container, .tariff-container, .input-container, .buttons-container, .form-container, .header-size .header-menu, .tariff-1, .tariff-2, .tariff-3, .author-label, .networks-signs {
+.uppercase {
+  text-transform: uppercase;
+}
+
+.flex-between {
   display: flex;
   justify-content: space-between;
-}
-
-.flex-center, .banner, .frame, .big-container, .foot-container, header, .footer {
-  display: flex;
-  justify-content: center;
-}
-
-.flex-start, .foot-menu-container, .navi-container, .small-container, .artist-btn {
-  display: flex;
-  justify-content: start;
 }
 
 .absolute {
@@ -335,29 +343,39 @@ h4 {
   flex-direction: column;
 }
 
-.align-center, .small-track-container, .track-container, .middle-container, .input-container, .artist-btn, .header-size, .header-size .header-menu, .tariff-1, .tariff-2, .tariff-3, .tarrif-align, .author-label {
-  display: flex;
-  align-items: center;
-}
-
-.align-start, .form-input {
-  display: flex;
-  align-items: flex-start;
-}
-
-.font-primary, .small-album-date, .small-album-name, .track-name, .artist-btn {
+.font-primary {
   color: #fff;
   text-decoration: none;
 }
 
-.font-secondary, .track-time, .track-author {
+.font-secondary {
   color: #808080;
   text-decoration: none;
 }
 
-.flex-wrap {
-  display: flex;
-  flex-wrap: wrap;
+.font-60 {
+  font-size: 60px;
+  line-height: 60px;
+}
+
+.margin-b-70 {
+  margin-bottom: 50px;
+}
+
+.margin-b-20 {
+  margin-bottom: 20px;
+}
+
+.margin-r-40 {
+  margin-right: 40px;
+}
+
+.margin-b-100 {
+  margin-bottom: 100px;
+}
+
+.padding-top-100 {
+  padding-top: 100px;
 }
 
 .bg-violet {
@@ -368,152 +386,130 @@ h4 {
   background-color: #95390C;
 }
 
-.font-60 {
-  font-size: 60px;
-  line-height: 60px;
+.padding-top-75 {
+  padding-top: 75px;
 }
 
-.font-30, .rubles {
-  font-size: 30px;
-}
-
-.font-24, .btn-white {
-  font-size: 24px;
-  color: #fff;
-  font-weight: normal;
-}
-
-.font-22 {
-  font-size: 22px;
-  color: #fff;
-  font-weight: normal;
-}
-
-.font-20, .small-album-name {
-  font-size: 22px;
-  font-weight: bold;
-  margin: 0;
-}
-
-.font-18 {
-  font-size: 18px;
-  line-height: 0;
-  margin: 0;
-}
-
-.font-16, .small-album-date {
-  font-size: 16px;
-  font-weight: normal;
-  margin: 0;
-}
-
-.font-14-bold, .form-input, .green-button {
-  font-size: 14px;
-  color: #fff;
-  font-weight: bold;
-}
-
-.font-14-normal, .track-time, .track-name, .artist-btn {
-  font-size: 14px;
-  font-weight: normal;
-  margin: 0;
-}
-
-.font-12-normal, .track-author {
-  font-size: 12px;
-  margin: 0;
-}
-
-.font-11 {
-  font-size: 11px;
-}
-
-.line-h-03 {
-  line-height: 0.3;
-}
-
-.line-h-12 {
-  line-height: 1.2;
-}
-
-.margin-b-60 {
-  margin-bottom: 60px;
-}
-
-.margin-b-70 {
-  margin-bottom: 50px;
-}
-
-.margin-b-38 {
-  margin-bottom: 38px;
-}
-
-.margin-b-20 {
-  margin-bottom: 20px;
-}
-
-.margin-b-25, .track-container {
-  margin-bottom: 25px;
-}
-
-.margin-b-50, .small-album-container {
-  margin-bottom: 50px;
+.margin-b-10 {
+  margin-bottom: 10px;
 }
 
 .margin-b-15 {
   margin-bottom: 15px;
 }
 
-.margin-b-10, .small-album-name {
-  margin-bottom: 10px;
+.banner, .frame, .big-container, .foot-container, .centerposition, header, .banner-text, .footer {
+  display: flex;
+  justify-content: center;
 }
 
-.margin-b-5, .track-name {
+.foot-menu-container, .navi-container, .small-container, .artist-btn, .startposition {
+  display: flex;
+  justify-content: start;
+}
+
+.small-track-container, .track-container, .middle-container, .input-container, .artist-btn, .header-size, .header-size .logo, .header-size .header-menu, .tariff-1, .tariff-2, .tariff-3, .tarrif-align, .author-label {
+  display: flex;
+  align-items: center;
+}
+
+.form-input {
+  display: flex;
+  align-items: flex-start;
+}
+
+.under-h1, .rubles {
+  font-size: 30px;
+  text-transform: uppercase;
+}
+
+.tariffname, .btn-white {
+  font-size: 24px;
+  color: #fff;
+  font-weight: normal;
+}
+
+.commoncondition {
+  font-size: 22px;
+  color: #fff;
+  font-weight: normal;
+}
+
+.small-album-name {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.banner-text, .followers {
+  font-size: 18px;
+  line-height: 0;
+  margin: 0;
+}
+
+.small-album-date {
+  font-size: 16px;
+  font-weight: normal;
+}
+
+.form-input, .green-button {
+  font-size: 14px;
+  color: #fff;
+  font-weight: bold;
+}
+
+.track-time, .track-name, .artist-btn {
+  font-size: 14px;
+  font-weight: normal;
+  margin: 0;
+}
+
+.track-author {
+  font-size: 12px;
+  margin: 0;
+}
+
+.h1-frame {
+  line-height: 0.3;
+}
+
+.banner-text {
+  line-height: 1.2;
+}
+
+.h1-frame {
+  margin-bottom: 60px;
+}
+
+.followers {
+  margin-bottom: 38px;
+}
+
+.track-container {
+  margin-bottom: 25px;
+}
+
+.small-album-container {
+  margin-bottom: 50px;
+}
+
+.track-name {
   margin-bottom: 5px;
 }
 
-.margin-r-40 {
-  margin-right: 40px;
-}
-
-.margin-r-50, .small-album-container {
+.small-album-container {
   margin-right: 50px;
 }
 
-.margin-r-15, .btn-icon {
+.btn-icon {
   margin-right: 15px;
 }
 
-.margin-b-100 {
-  margin-bottom: 100px;
-}
-
-.margin-l-10, .rubles {
+.rubles {
   margin-left: 10px;
 }
 
-.margin-t-35 {
+.input-container {
   margin-top: 35px;
-}
-
-.margin-t-90 {
-  margin-top: 90px;
-}
-
-.padding-top-50 {
-  padding-top: 50px;
-}
-
-.padding-top-75 {
-  padding-top: 75px;
-}
-
-.padding-top-100 {
-  padding-top: 100px;
-}
-
-.small-device-reverse {
-  flex-direction: row;
 }
 
 .big-container, .foot-container {
@@ -555,6 +551,7 @@ h4 {
   height: 50px;
   border-width: 0;
   padding: 15px 15px 15px 15px;
+  text-transform: uppercase;
 }
 
 .cover-icon {
@@ -617,10 +614,22 @@ h4 {
   width: 250px;
   height: 250px;
   padding: 215px 210px 10px 15px;
+  margin-left: 0;
+  margin-right: 0;
 }
 
 .small-album-container {
   flex-direction: column;
+}
+
+.small-album-name {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.small-album-date {
+  margin-left: 0;
+  margin-right: 0;
 }
 
 .navi-container {
@@ -676,7 +685,7 @@ h4 {
     height: 100%;
   }
 
-  .font-30, .rubles {
+  .font-30 {
     font-size: calc(100vw/1280*30);
   }
 
@@ -703,15 +712,15 @@ h4 {
     width: 100%;
   }
 
-  .font-24, .btn-white {
+  .tariffname, .btn-white {
     font-size: calc(100vw/1250*24);
   }
 
-  .font-22 {
+  .commoncondition {
     font-size: calc(100vw/1250*22);
   }
 
-  .font-18 {
+  .banner-text, .followers {
     font-size: calc(100vw/1250*18);
   }
 
@@ -764,19 +773,19 @@ h4 {
     margin: 0;
   }
 
-  .font-30, .rubles {
+  .under-h1, .rubles {
     font-size: 22px;
   }
 
-  .font-24, .btn-white {
+  .tariffname, .btn-white {
     font-size: 18px;
   }
 
-  .font-22 {
+  .commoncondition {
     font-size: 16px;
   }
 
-  .font-18 {
+  .banner-text, .followers {
     font-size: 14px;
   }
 
@@ -784,11 +793,11 @@ h4 {
     font-size: 24px;
   }
 
-  .margin-b-50, .small-album-container {
+  .margin-b-50 {
     margin-bottom: 20px;
   }
 
-  .margin-r-50, .small-album-container {
+  .margin-r-50 {
     margin-right: 20px;
   }
 
@@ -806,6 +815,7 @@ h4 {
     width: 0;
     height: 0;
     order: 4;
+    margin: 0;
   }
   .header-size .header-menu {
     justify-content: start;
@@ -815,6 +825,10 @@ h4 {
     min-width: 0;
     order: 3;
     padding: 0;
+    margin: 0;
+  }
+  .header-size .search {
+    margin-bottom: 12px;
   }
   .header-size .header-navi {
     margin-bottom: 10px;
@@ -934,6 +948,15 @@ h4 {
 
   .small-album-container {
     width: 130px;
+    margin-right: 20px;
+  }
+
+  .small-album-name {
+    margin-bottom: 5px;
+  }
+
+  .margin-b-15 {
+    margin-bottom: 10px;
   }
 
   .small-album-cover {
@@ -946,27 +969,27 @@ h4 {
     margin-bottom: 40px;
   }
 
-  .font-30, .rubles {
+  .under-h1, .rubles {
     font-size: 18px;
   }
 
-  .font-24, .btn-white {
+  .tariffname, .btn-white {
     font-size: 16px;
   }
 
-  .font-22 {
+  .commoncondition {
     font-size: 12px;
   }
 
-  .font-20, .small-album-name {
+  .small-album-name {
     font-size: 16px;
   }
 
-  .font-18 {
+  .banner-text, .followers {
     font-size: 12px;
   }
 
-  .font-16, .small-album-date {
+  .small-album-date {
     font-size: 12px;
   }
 

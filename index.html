@@ -6,111 +6,112 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Портал "Music Box", Viltorn</title>
     <link rel="stylesheet" href="styles/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
   <header>
     <div class="absolute">
       <div class="header-size big-container">
-        <div class="align-center logo">
+        <div class="logo">
           <img class="logo-img" src="images/logo.svg" alt="logo">
-          <p>MUSIC BOX</p>
+          <p class="uppercase">Music box</p>
         </div>
-        <div class="header-menu">
-          <a class="font-primary header-navi" href="index.html">ГЛАВНАЯ</a>
-          <a class="font-secondary header-navi" href="">КАТАЛОГ</a>
-          <a class="font-secondary header-navi" href="catalog.html">ИСПОЛНИТЕЛИ</a>
-          <a class="font-secondary header-navi" href="">КОНТАКТЫ</a>
+        <div class="header-menu flex-between">
+          <a class="font-primary header-navi" href="index.html">Главная</a>
+          <a class="font-secondary header-navi" href="">Каталог</a>
+          <a class="font-secondary header-navi" href="catalog.html">Исполнители</a>
+          <a class="font-secondary header-navi" href="">Контакты</a>
         </div>
         <a class="a-blank"></a>
-        <p class="align-center"><input type="search" class="search" name="q" placeholder="Поиск.."></p>
+        <p><input type="search" class="search" name="q" placeholder="Поиск.."></p>
       </div>
-    </div>  
+    </div>
   </header>
   <main>
     <section class="banner main-banner">
       <div class="main-banner-align big-container">
         <div>
-          <div class="line-h-03 margin-b-60">
-            <h1>ОНЛАЙН МУЗЫКА ГДЕ УГОДНО</h1>
-            <p class="font-30">БЕЗ ОГРАНИЧЕНИЙ<p>
+          <div class="h1-frame line-h-03 margin-b-60">
+            <h1>Онлайн музыка где угодно</h1>
+            <p class="under-h1">Без ограничений<p>
           </div>
-          <p class="font-18 line-h-12 flex-center">Получите доступ всего за несколько шагов. Заполните форму ниже и откройте мир музыки</p>
+          <p class="banner-text">Получите доступ всего за несколько шагов. Заполните форму ниже и откройте мир музыки</p>
         </div>
-        <form class="form-container">
-          <div class="input-container margin-t-35">
+        <form class="form-container flex-between">
+          <div class="input-container flex-between">
             <p class="font-primary form-input-margin"><input class="form-input" type="text" name="name" value="Имя"></p>
             <p class="font-primary"><input class="form-input" type="email" name="email" value="Email"></p>
           </div>
-            <button class="green-button" type="submit">ПОЛУЧИТЬ ДОСТУП</button>
+            <button class="green-button" type="submit">Получить доступ</button>
         </form>
       </div>
     </section>
     <section class="frame padding-top-100">
       <div class="big-container flex-column">
-        <h2 class="text-center">ФОРМЫ ПОДПИСКИ</h2>
-        <div class="tariff-container">
-          <div class="tariff-1">
-            <p class="font-24">БЕСПЛАТНАЯ</p>
+        <h2 class="text-center">Формы подписки</h2>
+        <div class="tariff-container flex-between">
+          <div class="tariff-1 flex-between">
+            <p class="tariffname">Бесплатная</p>
             <div class="tarrif-align">
               <div class="price">
-                <span class="font-60">0</span><span class="rubles">РУБ.</span>
+                <span class="font-60">0</span><span class="rubles">Руб.</span>
               </div>
-              <button class="btn-white">ОФОРМИТЬ</button>
+              <button class="btn-white">Оформить</button>
               <p class="tarrif-condition">Оплата в месяц. Бесплатный тариф предоставляет доступ ко всей коллекции музыки. Присутствует реклама</p>
             </div>
           </div>
-          <div class="tariff-2">
-            <p class="font-24">БЕСПЛАТНАЯ</p>
+          <div class="tariff-2 flex-between">
+            <p class="tariffname">Стандартная</p>
             <div class="tarrif-align">
               <div class="price">
-                <span class="font-60">250</span><span class="rubles">РУБ.</span>
+                <span class="font-60">250</span><span class="rubles">Руб.</span>
               </div>
-              <button class="btn-white">ОФОРМИТЬ</button>
+              <button class="btn-white">Оформить</button>
               <p class="tarrif-condition">Оплата в месяц. Бесплатный тариф предоставляет доступ ко всей коллекции музыки. Присутствует реклама</p>
             </div>
           </div>
-          <div class="tariff-3">
-            <p class="font-24">ПРЕМИУМ</p>
+          <div class="tariff-3 flex-between">
+            <p class="tariffname">Премиум</p>
             <div class="tarrif-align">
               <div class="price">
-                <span class="font-60">500</span><span class="rubles">РУБ.</span>
+                <span class="font-60">500</span><span class="rubles">Руб.</span>
               </div>
-              <button class="btn-white">ОФОРМИТЬ</button>
+              <button class="btn-white">Оформить</button>
               <p class="tarrif-condition">Оплата в месяц. Премиум тариф предоставляет доступ ко всей коллекции музыки в высоком качестве</p>
             </div>
           </div>
         </div>
-        <p class="font-22 text-center">На всех тарифах возможно прослушивание музыки с мобильных устройств. На премиум тарифе вы можете скачать все композиции на ваше устройство и слушать музыку без подключения к интернету</p>
+        <p class="commoncondition text-center">На всех тарифах возможно прослушивание музыки с мобильных устройств. На премиум тарифе вы можете скачать все композиции на ваше устройство и слушать музыку без подключения к интернету</p>
       </div>
     </section>
     <section class="frame padding-top-100">
       <div class="big-container flex-column">
-        <h2 class="text-center">ПОСЛЕДНИЕ НОВОСТИ</h2>
+        <h2 class="text-center">Последние новости</h2>
         <div class="middle-container margin-b-70 flex-between">
           <img class="album-cover" src="images/Music_to_Be_Murdered_By.png" alt="обложка альбома">
           <div class="small-container">
             <h3>Music to Be Murdered By</h3>
             <p class="album-description">Новый альбом Eminem «Music to Be Murdered By» уже доступен в нашем сервисе. На альбоме вас ждёт 20 новых треков.</p>
-            <div class="author-label">
+            <div class="author-label flex-between">
               <img class="author-image" src="images/avatar.png" alt="автор">
-              <p class="color-orange">MUSIC BOX</p>
+              <p class="color-orange uppercase">Music box</p>
               <p>|</p>
               <p class="issue-date">17/01/2020</p>
             </div>
-            <button class="btn-grey">К АЛЬБОМУ</button>
+            <button class="btn-grey uppercase">К альбому</button>
           </div>
         </div>
         <div class="middle-container flex-between small-device-reverse">
           <div class="small-container">
             <h3>Ordinary Man</h3>
             <p class="album-description">Легенда рока Оззи Озборн спустя 10 лет выпустил новый альбом Ordinary Man. Слушайте в числе первых на Music Box.</p>
-            <div class="author-label">
+            <div class="author-label flex-between">
               <img class="author-image" src="images/avatar.png" alt="автор">
-              <p class="color-orange">MUSIC BOX</p>
+              <p class="color-orange uppercase">Music box</p>
               <p>|</p>
               <p class="issue-date">24/02/2020</p>
             </div>
-            <button class="btn-grey">К АЛЬБОМУ</button>
+            <button class="btn-grey uppercase">К альбому</button>
           </div>
           <img class="album-cover" src="images/Ordinary_Man.png" alt="обложка альбома">
         </div>
@@ -118,7 +119,7 @@
     </section>
     <section class="frame padding-top-100">
       <div class="big-container flex-column margin-b-100">
-        <h2 class="text-center">МОБИЛЬНОЕ ПРИЛОЖЕНИЕ</h2>
+        <h2 class="text-center">Мобильное приложение</h2>
         <div class="middle-container flex-between small-device-reverse">
           <div class="small-container">
             <p class="mobile-description">Воспользуйтесь нашим мобильным приложением. Оно позволит слушать музыку с любого устройства на базе операционных систем Androind и iOS</p>
@@ -153,7 +154,7 @@
           </div>
           <div class="navi-container">
             <h4>Подписывайтесь</h4>
-            <div class="networks-signs">
+            <div class="networks-signs flex-between">
               <img src="images/Google+.png" alt="Google icon">
               <img src="images/Twitter.png" alt="Twitter icon">
               <img src="images/Facebook.png" alt="Facebook icon">
